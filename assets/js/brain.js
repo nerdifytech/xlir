@@ -86,6 +86,7 @@ var BuildHTML = function () {
     _classCallCheck(this, BuildHTML);
 
     this.messageWrapper = 'message-wrapper';
+    this.boldTextClass = 'bold-text';
     this.circleWrapper = 'circle-wrapper';
     this.textWrapper = 'text-wrapper';
 
@@ -94,7 +95,12 @@ var BuildHTML = function () {
   }
 
   BuildHTML.prototype._build = function _build(text, who) {
-    return '<div class="' + this.messageWrapper + ' ' + this[who + 'Class'] + '">\n              <div class="' + this.circleWrapper + ' animated bounceIn"></div>\n              <div class="' + this.textWrapper + '">...</div>\n            </div>';
+    const textStyle = who === 'me' ? '' : `class="${this.boldTextClass}"`;
+    var imageSource = 'https://github.com/nerdifytech/xlir.github.io/blob/main/images/profile.png?raw=true'; // Replace with the actual image source
+    return '<div class="' + this.messageWrapper + ' ' + this[who + 'Class'] + '">\n' +
+           '  <img src="' + imageSource + '" class="' + this.circleWrapper + ' animated bounceIn">\n' +
+           '  <div class="' + this.textWrapper + '">...</div>\n' +
+           '</div>';
   };
 
   BuildHTML.prototype.me = function me(text) {
@@ -114,7 +120,7 @@ var divs =
 '<nav id="aco-nav" class="aco-nav">' +
 '	<div class="default-nav">' +
 '      <div class="main-nav">' +
-'        <div id="default-msg">Hello!</div>' +
+'        <div id="default-msg">Click Me to Chat</div>' +
 '        <div id="options" class="options"></div>' +
 '      </div>' +
 '    </div>' +
@@ -123,7 +129,7 @@ var divs =
 '    <div id="aco-content" class="aco-content"></div>' +
 '  </div>' +
 '  <div id="aco-bottom" class="aco-bottom">' +
-'    <textarea id="aco-input" class="aco-input"></textarea>' +
+'    <textarea id="aco-input" class="aco-input" style="color: black; font-weight: bold;"></textarea>' +
 '    <div id="aco-send" class="aco-send"></div>' +
 '  </div>' +
 '</div>';

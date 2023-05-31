@@ -134,12 +134,13 @@ var divs =
 '  </div>' +
 '</div>';
 
-var path = 'http://brainshop.ai/web/';
-
+var path = 'https://brainshop.ai/web/';
+var path2 = 'http://raw.githubusercontent.com/BurntBubblegmEater/Brainshop/main/'
 var csses = 
 "<link rel='stylesheet' href='" + path + "css/normalize.css'>" +
 "<link rel='stylesheet prefetch' href='" + path + "css/animate.min.css'>" +
 "<link rel='stylesheet' href='" + path + "css/style.css'>";
+
 
 
 

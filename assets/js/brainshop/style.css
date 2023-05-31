@@ -86,7 +86,7 @@
 .aco-nav .default-nav .main-nav .toggle {
   height: 32px;
   width: 32px;
-  background: url(https://brainshop.ai/web//img/ic_arrow_back_white_48dp.png);
+  background: url(https:/brainshop.ai/web/img/ic_arrow_back_white_48dp.png);
   background-size: contain;
   margin: 16px;
   float: left;
@@ -97,7 +97,7 @@
 .aco-nav .default-nav .main-nav .options {
   height: 32px;
   width: 32px;
-  background: url(https://brainshop.ai/web//img/chat_white.png);
+  background: url(https:/brainshop.ai/web/img/chat_white.png);
   background-size: contain;
   margin: 16px;
   position: absolute;
@@ -172,7 +172,7 @@
 }
 .aco-bottom .aco-send:before {
   content: '';
-  background: url(https://brainshop.ai/web//img/ic_send_white_48dp.png) no-repeat center center;
+  background: url(https:/brainshop.ai/web/img/ic_send_white_48dp.png) no-repeat center center;
   background-size: 25.6px;
   position: absolute;
   top: 0;
